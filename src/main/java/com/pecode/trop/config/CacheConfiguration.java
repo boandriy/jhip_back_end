@@ -38,6 +38,7 @@ public class CacheConfiguration {
             cm.createCache(com.pecode.trop.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.pecode.trop.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.pecode.trop.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.pecode.trop.domain.Subscribers.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
